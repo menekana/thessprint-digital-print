@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-secondary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/60">
-            <p>© 2025 ThessPrint. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>© 2025 ThessPrint.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-primary transition-colors">Όροι Χρήσης</a>
               <a href="#" className="hover:text-primary transition-colors">Πολιτική Απορρήτου</a>
