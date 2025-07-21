@@ -21,7 +21,7 @@ const Header = () => {
             />
           </div>
           
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Aligned Right */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
               Υπηρεσίες
@@ -29,18 +29,18 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
               Γιατί ThessPrint
             </a>
-          </div>
-
-          {/* Desktop Contact Info */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="h-4 w-4" />
-              <span>+30 XXX XXX XXXX</span>
+            
+            {/* Desktop Contact Info - Inline with Navigation */}
+            <div className="hidden lg:flex items-center space-x-4 ml-8">
+              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <Phone className="h-4 w-4" />
+                <span>+30 XXX XXX XXXX</span>
+              </div>
+              <Button variant="outline" size="sm">
+                <Mail className="h-4 w-4 mr-2" />
+                Επικοινωνία
+              </Button>
             </div>
-            <Button variant="outline" size="sm">
-              <Mail className="h-4 w-4 mr-2" />
-              Επικοινωνία
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
