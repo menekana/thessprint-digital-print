@@ -19,7 +19,7 @@ const CallToActionSection = () => {
               <Phone className="mr-2 h-5 w-5" />
               Καλέστε μας τώρα
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button size="lg" variant="outline" className="border-background bg-background text-foreground hover:bg-background/90">
               <Mail className="mr-2 h-5 w-5" />
               Στείλτε μήνυμα
               <ArrowRight className="ml-2 h-5 w-5" />
