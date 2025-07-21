@@ -9,32 +9,42 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 2% 38%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 2% 38%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 2% 38%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* ThessPrint Brand Colors */
+    --primary: 33 46% 50%; /* Gold */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 33 46% 60%;
+    --primary-dark: 33 46% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 2% 38%; /* Grey */
+    --secondary-foreground: 0 0% 100%;
+    
+    --brand-gold: 33 46% 50%;
+    --brand-gold-light: 33 46% 60%;
+    --brand-gold-dark: 33 46% 40%;
+    --brand-grey: 210 2% 38%;
+    --brand-grey-light: 210 2% 48%;
+    --brand-grey-dark: 210 2% 28%;
 
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 210 2% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 33 46% 95%;
+    --accent-foreground: 210 2% 38%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 33 46% 50%;
 
     --radius: 0.5rem;
 
