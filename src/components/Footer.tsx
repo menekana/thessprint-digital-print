@@ -1,28 +1,17 @@
 import { MapPin, Phone, Mail, Facebook } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-secondary text-secondary-foreground">
+  return <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" 
-              alt="ThessPrint Logo" 
-              className="h-12 w-auto mb-6 brightness-0 invert"
-            />
+            <img src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6 brightness-0 invert" />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
               Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων ThessPrint 
               προσφέρει καινοτόμες λύσεις εκτύπωσης με γνώμονα την ποιότητα και 
               την ικανοποίηση των πελατών.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://facebook.com/ThessPrint" 
-                className="bg-primary/10 p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://facebook.com/ThessPrint" className="bg-primary/10 p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" target="_blank" rel="noopener noreferrer">
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
@@ -72,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-secondary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/60">
-            <p>© 2024 ThessPrint. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>© 2025 ThessPrint. Όλα τα δικαιώματα διατηρούνται.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-primary transition-colors">Όροι Χρήσης</a>
               <a href="#" className="hover:text-primary transition-colors">Πολιτική Απορρήτου</a>
@@ -81,8 +70,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
