@@ -3,12 +3,19 @@ import { ArrowRight, Award, Users, Clock } from "lucide-react";
 const HeroSection = () => {
   return <section className="bg-background py-8 lg:py-16">
       <div className="container mx-auto px-6">
-        {/* Hero Image */}
+        {/* Hero Images - Responsive */}
         <div className="mb-12 lg:mb-16">
+          {/* Mobile Image */}
           <img 
-            src="/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png" 
+            src="/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png" 
             alt="ThessPrint Facility" 
-            className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[60vh]"
+            className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[60vh] block md:hidden"
+          />
+          {/* Desktop Image */}
+          <img 
+            src="/lovable-uploads/8a401504-2366-43a8-97e3-70e66b83848c.png" 
+            alt="ThessPrint Facility" 
+            className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[60vh] hidden md:block"
           />
         </div>
         <div className="max-w-4xl mx-auto text-center">
