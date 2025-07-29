@@ -1,4 +1,4 @@
-import { CheckCircle, Shield, Zap, Heart } from "lucide-react";
+import { Target, Gauge, Briefcase, Handshake } from "lucide-react";
 const AboutSection = () => {
   return <section className="bg-accent py-20">
       <div className="container mx-auto px-6">
@@ -17,7 +17,7 @@ const AboutSection = () => {
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <CheckCircle className="h-6 w-6 text-primary" />
+                  <Target className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">ThessPrecision</h3>
@@ -29,45 +29,42 @@ const AboutSection = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Shield className="h-6 w-6 text-primary" />
+                  <Gauge className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Πιστοποιήσεις Ποιότητας
+                    ThessPerformance
                   </h3>
                   <p className="text-muted-foreground">
-                    Διαθέτουμε πιστοποιήσεις ISO 9001, ISO 14001 και FSC, διασφαλίζοντας 
-                    την υψηλότερη ποιότητα και περιβαλλοντική ευθύνη.
+                    Σταθερά υψηλή απόδοση σε ταχύτητα και ποιότητα
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Zap className="h-6 w-6 text-primary" />
+                  <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Άμεση Εξυπηρέτηση
+                    ThessProfessionalism
                   </h3>
                   <p className="text-muted-foreground">
-                    Κατανοούμε τις ανάγκες των πελατών μας και παρέχουμε γρήγορες, 
-                    αποτελεσματικές λύσεις χωρίς συμβιβασμούς στην ποιότητα.
+                    Επαγγελματισμός στη συμπεριφορά και στην εξυπηρέτηση
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Heart className="h-6 w-6 text-primary" />
+                  <Handshake className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Απόλυτη Ικανοποίηση
+                    ThessPartnership
                   </h3>
                   <p className="text-muted-foreground">
-                    Η ικανοποίηση των πελατών-συνεργατών μας είναι η προτεραιότητά μας. 
-                    Δουλεύουμε στενά μαζί τους για να πετύχουμε το τέλειο αποτέλεσμα.
+                    Εστίαση στη συνεργασία με πελάτες και προμηθευτές
                   </p>
                 </div>
               </div>
