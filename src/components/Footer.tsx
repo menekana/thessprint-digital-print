@@ -17,17 +17,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Υπηρεσίες</h3>
-            <ul className="space-y-3 text-secondary-foreground/80">
-              <li><a href="#" className="hover:text-primary transition-colors">Τεχνοοικονομική Συμβουλευτική</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Γραφιστική Υποστήριξη</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Προεκτύπωση</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Εκτύπωση</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Βιβλιοδεσία</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Ειδικές Κατασκευές</a></li>
-            </ul>
-          </div>
+          
 
           <div>
             <h3 className="text-lg font-semibold mb-6">Επικοινωνία</h3>
@@ -36,7 +26,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Διεύθυνση</p>
-                  <p className="text-sm">Θεσσαλονίκη, Ελλάδα</p>
+                  <p className="text-sm">ΒΙ.ΠΑ Λάκκωμα Χαλκιδικής, ΤΘ 129 ΤΚ 63080 Λάκκωμα</p>
                 </div>
               </div>
               
@@ -44,7 +34,7 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                 <div>
                   <p className="font-medium">Τηλέφωνο</p>
-                  <p className="text-sm">+30 XXX XXX XXXX</p>
+                  <p className="text-sm">+30 23990 20 393</p>
                 </div>
               </div>
               
@@ -62,11 +52,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/60">
             <p>© 2025 ThessPrint.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-primary transition-colors">Όροι Χρήσης</a>
-              <a href="#" className="hover:text-primary transition-colors">Πολιτική Απορρήτου</a>
-              <a href="#" className="hover:text-primary transition-colors">Cookies</a>
-            </div>
+            
           </div>
         </div>
       </div>
