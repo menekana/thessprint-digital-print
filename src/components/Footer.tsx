@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
-            <img src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6 brightness-0 invert" />
+            <img src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
               Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων ThessPrint 
               προσφέρει καινοτόμες λύσεις εκτύπωσης με γνώμονα την ποιότητα και 
