@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Clock } from "lucide-react";
 const HeroSection = () => {
-  return <section className="relative bg-background py-20 lg:py-32 overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png')" }}
-      />
-      {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-background/85" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+  return <section className="bg-background py-8 lg:py-16">
+      <div className="container mx-auto px-6">
+        {/* Hero Image */}
+        <div className="mb-12 lg:mb-16">
+          <img 
+            src="/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png" 
+            alt="ThessPrint Facility" 
+            className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[60vh]"
+          />
+        </div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
             Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων{" "}
