@@ -22,8 +22,7 @@ const AboutSection = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">ThessPrecision</h3>
                   <p className="text-muted-foreground">
-                    Πάνω από 20 χρόνια στον κλάδο των γραφικών τεχνών, με βαθιά γνώση και εξειδίκευση 
-                    σε εκτυπώσεις μεγάλης κλίμακας offset.
+                    Ποιότητα, πιστή τήρηση προδιαγραφών
                   </p>
                 </div>
               </div>
