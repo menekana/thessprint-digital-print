@@ -3,8 +3,17 @@ import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
   };
   return <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
@@ -15,12 +24,12 @@ const Header = () => {
           
           {/* Desktop Navigation - Aligned Right */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
+            <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors font-medium">
               Υπηρεσίες
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
+            </button>
+            <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors font-medium">
               Γιατί ThessPrint
-            </a>
+            </button>
             
             {/* Desktop Contact Info - Inline with Navigation */}
             <div className="hidden lg:flex items-center space-x-4 ml-8">
@@ -48,12 +57,12 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && <div className="md:hidden mt-4 pb-4 border-t border-border">
             <div className="flex flex-col space-y-4 pt-4">
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+              <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors font-medium py-2 text-left">
                 Υπηρεσίες
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+              </button>
+              <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors font-medium py-2 text-left">
                 Γιατί ThessPrint
-              </a>
+              </button>
               
               {/* Mobile Contact */}
               <div className="pt-4 border-t border-border">

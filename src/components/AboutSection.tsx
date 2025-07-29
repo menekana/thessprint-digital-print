@@ -1,6 +1,6 @@
 import { Award, Zap, UserCheck, Users } from "lucide-react";
 const AboutSection = () => {
-  return <section className="bg-accent py-20">
+  return <section id="about" className="bg-accent py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
