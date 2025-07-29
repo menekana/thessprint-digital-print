@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Clock } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="bg-background py-20 lg:py-32">
+  return <section className="bg-background py-20 lg:py-32">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
@@ -11,10 +9,9 @@ const HeroSection = () => {
             <span className="text-primary">«ThessPrint»</span>
           </h1>
           
-          <p className="text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
-            προσφέρει καινοτόμες και αποτελεσματικές λύσεις παραγωγής εντύπων, με γνώμονα την άμεση 
-            εξυπηρέτηση και απόλυτη ικανοποίηση των πελατών-συνεργατών της.
-          </p>
+          <p className="text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">H βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων «ThessPrint» προσφέρει
+ποιοτικές, καινοτόμες και αποτελεσματικές λύσεις παραγωγής εντύπων, με γνώμονα την
+απόλυτη ικανοποίηση των πελατών-συνεργατών της.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground">
@@ -53,8 +50,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
