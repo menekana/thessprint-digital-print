@@ -27,9 +27,11 @@ const HeroSection = () => {
           <p className="text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">προσφέρει ποιοτικές, καινοτόμες και αποτελεσματικές λύσεις παραγωγής εντύπων, με γνώμονα την απόλυτη ικανοποίηση των πελατών-συνεργατών της.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground">
-              Εξερευνήστε τις Υπηρεσίες μας
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground">
+              <a href="#services" className="scroll-smooth">
+                Εξερευνήστε τις Υπηρεσίες μας
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <a href="mailto:info@thessprint.gr">
