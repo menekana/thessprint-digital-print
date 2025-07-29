@@ -28,9 +28,11 @@ const Header = () => {
                 <Phone className="h-4 w-4" />
                 <span>+30 23990 20 393</span>
               </div>
-              <Button variant="outline" size="sm">
-                <Mail className="h-4 w-4 mr-2" />
-                Επικοινωνία
+              <Button asChild variant="outline" size="sm">
+                <a href="mailto:info@thessprint.gr">
+                  <Mail className="h-4 w-4 mr-2" />
+                  Επικοινωνία
+                </a>
               </Button>
             </div>
           </div>
@@ -57,11 +59,13 @@ const Header = () => {
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
                   <Phone className="h-4 w-4" />
-                  <span>+30 XXX XXX XXXX</span>
+                  <span>+30 23990 20 393</span>
                 </div>
-                <Button variant="outline" size="sm" className="w-full">
-                  <Mail className="h-4 w-4 mr-2" />
-                  Επικοινωνία
+                <Button asChild variant="outline" size="sm" className="w-full">
+                  <a href="mailto:info@thessprint.gr">
+                    <Mail className="h-4 w-4 mr-2" />
+                    Επικοινωνία
+                  </a>
                 </Button>
               </div>
             </div>

@@ -15,14 +15,18 @@ const CallToActionSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Phone className="mr-2 h-5 w-5" />
-              Καλέστε μας τώρα
+            <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
+              <a href="tel:+302399020393">
+                <Phone className="mr-2 h-5 w-5" />
+                Καλέστε μας τώρα
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-background bg-background text-foreground hover:bg-background/90">
-              <Mail className="mr-2 h-5 w-5" />
-              Στείλτε μήνυμα
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" variant="outline" className="border-background bg-background text-foreground hover:bg-background/90">
+              <a href="mailto:info@thessprint.gr">
+                <Mail className="mr-2 h-5 w-5" />
+                Στείλτε μήνυμα
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
 

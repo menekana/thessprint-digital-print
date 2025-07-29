@@ -16,8 +16,10 @@ const HeroSection = () => {
               Εξερευνήστε τις Υπηρεσίες μας
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              Επικοινωνήστε μαζί μας
+            <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <a href="mailto:info@thessprint.gr">
+                Επικοινωνήστε μαζί μας
+              </a>
             </Button>
           </div>
 
