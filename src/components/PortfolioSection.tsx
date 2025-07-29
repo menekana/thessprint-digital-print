@@ -11,11 +11,11 @@ const PortfolioSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            Τα <span className="text-primary">Έργα</span> μας
+            Οραματιστείτε το <span className="text-primary">Αποτέλεσμα</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ανακαλύψτε ορισμένα από τα επιτυχημένα έργα που έχουμε υλοποιήσει 
-            για τους πελάτες μας, με έμφαση στην ποιότητα και την προσοχή στη λεπτομέρεια.
+            Δείτε παραδείγματα του τι μπορούμε να δημιουργήσουμε για εσάς - 
+            από επαγγελματικά έντυπα έως εταιρικό υλικό υψηλής ποιότητας.
           </p>
         </div>
 
