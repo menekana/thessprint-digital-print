@@ -9,9 +9,7 @@ const HeroSection = () => {
             <span className="text-primary">«ThessPrint»</span>
           </h1>
           
-          <p className="text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">H βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων «ThessPrint» προσφέρει
-ποιοτικές, καινοτόμες και αποτελεσματικές λύσεις παραγωγής εντύπων, με γνώμονα την
-απόλυτη ικανοποίηση των πελατών-συνεργατών της.</p>
+          <p className="text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">προσφέρει ποιοτικές, καινοτόμες και αποτελεσματικές λύσεις παραγωγής εντύπων, με γνώμονα την απόλυτη ικανοποίηση των πελατών-συνεργατών της.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground">
