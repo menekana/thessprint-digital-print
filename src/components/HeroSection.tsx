@@ -27,7 +27,7 @@ const HeroSection = () => {
                 <Clock className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Δεκαετίες Εμπειρίας</h3>
-              <p className="text-sm text-muted-foreground">Πάνω από 20 χρόνια στον κλάδο των γραφικών τεχνών</p>
+              <p className="text-sm text-muted-foreground">Με ανθρώπινο δυναμικό που μετρά από 20 χρόνια στον κλάδο των γραφικών τεχνών</p>
             </div>
             
             <div className="flex flex-col items-center text-center">
@@ -35,7 +35,7 @@ const HeroSection = () => {
                 <Award className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Πιστοποιήσεις Ποιότητας</h3>
-              <p className="text-sm text-muted-foreground">ISO 9001, ISO 14001, FSC πιστοποιημένο</p>
+              <p className="text-sm text-muted-foreground">ISO 9001:2015, ISO 14001:2004, FSC/CoC πιστοποιημένο</p>
             </div>
             
             <div className="flex flex-col items-center text-center">
