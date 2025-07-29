@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Eye } from "lucide-react";
+import corporateCatalogs from "@/assets/portfolio-corporate-catalogs.webp";
+import booksMagazines from "@/assets/portfolio-books-magazines.webp";
+import marketingMaterials from "@/assets/portfolio-marketing-materials.webp";
+import packaging from "@/assets/portfolio-packaging.webp";
+import businessStationery from "@/assets/portfolio-business-stationery.webp";
+import customProjects from "@/assets/portfolio-custom-projects.webp";
 const PortfolioSection = () => {
   return <section className="bg-accent py-20">
       <div className="container mx-auto px-6">
@@ -16,13 +22,13 @@ const PortfolioSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {/* Portfolio Placeholders */}
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Εκτυπώσεις Καταλόγων</p>
-              </div>
+            <div className="aspect-[4/3] relative overflow-hidden">
+              <img 
+                src={corporateCatalogs} 
+                alt="Εταιρικοί Κατάλογοι"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Εταιρικοί Κατάλογοι</h3>
@@ -31,13 +37,13 @@ const PortfolioSection = () => {
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Βιβλία & Περιοδικά</p>
-              </div>
+            <div className="aspect-[4/3] relative overflow-hidden">
+              <img 
+                src={booksMagazines} 
+                alt="Εκδοτικά Έργα"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Εκδοτικά Έργα</h3>
@@ -46,13 +52,13 @@ const PortfolioSection = () => {
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Διαφημιστικά Έντυπα</p>
-              </div>
+            <div className="aspect-[4/3] relative overflow-hidden">
+              <img 
+                src={marketingMaterials} 
+                alt="Διαφημιστικό Υλικό"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Διαφημιστικό Υλικό</h3>
@@ -61,13 +67,13 @@ const PortfolioSection = () => {
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Συσκευασίες</p>
-              </div>
+            <div className="aspect-[4/3] relative overflow-hidden">
+              <img 
+                src={packaging} 
+                alt="Εκτυπώσεις Συσκευασιών"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Εκτυπώσεις Συσκευασιών</h3>
@@ -76,13 +82,13 @@ const PortfolioSection = () => {
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Εταιρικά Έντυπα</p>
-              </div>
+            <div className="aspect-[4/3] relative overflow-hidden">
+              <img 
+                src={businessStationery} 
+                alt="Επαγγελματικό Υλικό"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Επαγγελματικό Υλικό</h3>
@@ -91,13 +97,13 @@ const PortfolioSection = () => {
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground">Ειδικές Κατασκευές</p>
-              </div>
+            <div className="aspect-[4/3] relative overflow-hidden">
+              <img 
+                src={customProjects} 
+                alt="Προσαρμοσμένα Έργα"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Προσαρμοσμένα Έργα</h3>
