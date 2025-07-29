@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-              Τι κάνει τη <span className="text-primary">ThessPrint</span> μοναδική
+              Γιατί <span className="text-primary">ThessPrint</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Με δεκαετίες εμπειρίας και συνεχή επένδυση στην τεχνολογία, 
