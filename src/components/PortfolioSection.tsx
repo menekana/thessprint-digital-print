@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Eye } from "lucide-react";
-
 const PortfolioSection = () => {
-  return (
-    <section className="bg-accent py-20">
+  return <section className="bg-accent py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
@@ -109,14 +107,9 @@ const PortfolioSection = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            Δείτε Περισσότερα Έργα
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PortfolioSection;
