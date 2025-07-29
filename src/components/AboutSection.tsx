@@ -1,13 +1,11 @@
 import { CheckCircle, Shield, Zap, Heart } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section className="bg-accent py-20">
+  return <section className="bg-accent py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-              Γιατί <span className="text-primary">ThessPrint</span>
+              Τι κάνει τη <span className="text-primary">ThessPrint</span> μοναδική
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Με δεκαετίες εμπειρίας και συνεχή επένδυση στην τεχνολογία, 
@@ -22,9 +20,7 @@ const AboutSection = () => {
                   <CheckCircle className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Εμπειρία & Εξειδίκευση
-                  </h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">ThessPrecision</h3>
                   <p className="text-muted-foreground">
                     Πάνω από 20 χρόνια στον κλάδο των γραφικών τεχνών, με βαθιά γνώση και εξειδίκευση 
                     σε εκτυπώσεις μεγάλης κλίμακας offset.
@@ -95,7 +91,9 @@ const AboutSection = () => {
                   <span className="text-sm text-primary font-semibold">99.8%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: '99.8%' }}></div>
+                  <div className="bg-primary h-2 rounded-full" style={{
+                  width: '99.8%'
+                }}></div>
                 </div>
                 
                 <div className="flex justify-between items-center">
@@ -103,7 +101,9 @@ const AboutSection = () => {
                   <span className="text-sm text-primary font-semibold">98%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: '98%' }}></div>
+                  <div className="bg-primary h-2 rounded-full" style={{
+                  width: '98%'
+                }}></div>
                 </div>
                 
                 <div className="flex justify-between items-center">
@@ -111,15 +111,15 @@ const AboutSection = () => {
                   <span className="text-sm text-primary font-semibold">95%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: '95%' }}></div>
+                  <div className="bg-primary h-2 rounded-full" style={{
+                  width: '95%'
+                }}></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
