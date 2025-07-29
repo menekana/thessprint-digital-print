@@ -1,4 +1,4 @@
-import { Target, Gauge, Briefcase, Handshake } from "lucide-react";
+import { Award, Zap, UserCheck, Users } from "lucide-react";
 const AboutSection = () => {
   return <section className="bg-accent py-20">
       <div className="container mx-auto px-6">
@@ -17,7 +17,7 @@ const AboutSection = () => {
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Target className="h-6 w-6 text-primary" />
+                  <Award className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">ThessPrecision</h3>
@@ -29,7 +29,7 @@ const AboutSection = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Gauge className="h-6 w-6 text-primary" />
+                  <Zap className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -43,7 +43,7 @@ const AboutSection = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <UserCheck className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -57,7 +57,7 @@ const AboutSection = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full">
-                  <Handshake className="h-6 w-6 text-primary" />
+                  <Users className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
