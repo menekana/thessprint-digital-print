@@ -29,7 +29,7 @@ const ServicesSection = () => {
   }, {
     icon: Truck,
     title: "Διακίνηση & Logistics",
-    description: "Αξιόπιστη διακίνηση και παράδοση των προϊόντων σας σε όλη την Ελλάδα και την Ευρώπη"
+    description: "Αξιόπιστη αποστολή και παράδοση των προϊόντων με άψογη συσκευασία και δυνατότητα αποθήκευσης"
   }];
   return <section id="services" className="bg-background py-20">
       <div className="container mx-auto px-6">
