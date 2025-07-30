@@ -11,9 +11,9 @@ const HeroSection = () => {
         {/* Hero Image */}
         <div className="mb-12 lg:mb-16 relative">
           {/* Mobile Image */}
-          <img src={heroImage.mobile} alt={heroImage.alt} className="w-full h-auto rounded-lg shadow-lg object-cover object-top max-h-[40vh] block md:hidden" />
+          <img src={heroImage.mobile} alt={heroImage.alt} className="w-full h-auto rounded-lg shadow-lg object-contain object-center block md:hidden" />
           {/* Desktop Image */}
-          <img src={heroImage.desktop} alt={heroImage.alt} className="w-full h-auto rounded-lg shadow-lg object-cover object-top max-h-[40vh] hidden md:block" />
+          <img src={heroImage.desktop} alt={heroImage.alt} className="w-full h-auto rounded-lg shadow-lg object-contain object-center hidden md:block" />
         </div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
