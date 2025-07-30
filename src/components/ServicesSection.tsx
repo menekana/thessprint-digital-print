@@ -9,7 +9,7 @@ const ServicesSection = () => {
   }, {
     icon: Palette,
     title: "Γραφιστική Υποστήριξη",
-    description: "Δημιουργικές λύσεις σχεδιασμού που αναδεικνύουν την ταυτότητα της επιχείρησής σας"
+    description: "Δυνατότητα design support σε δημιουργικά γραφεία διαφημιστικές εταιρείες κ.ά."
   }, {
     icon: FileText,
     title: "Προεκτύπωση",
