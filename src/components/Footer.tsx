@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
             <img src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
@@ -17,37 +17,39 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Επικοινωνία</h3>
-            <div className="space-y-4 text-secondary-foreground/80">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium">Διεύθυνση</p>
-                  <p className="text-sm">ΒΙ.ΠΑ Λάκκωμα Χαλκιδικής, ΤΘ 129 ΤΚ 63080 Λάκκωμα</p>
+          <div className="flex gap-8 items-start">
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold mb-6">Επικοινωνία</h3>
+              <div className="space-y-4 text-secondary-foreground/80">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium">Διεύθυνση</p>
+                    <p className="text-sm">ΒΙ.ΠΑ Λάκκωμα Χαλκιδικής, ΤΘ 129 ΤΚ 63080 Λάκκωμα</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <div>
-                  <p className="font-medium">Τηλέφωνο</p>
-                  <p className="text-sm">+30 23990 20 393</p>
+                
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="font-medium">Τηλέφωνο</p>
+                    <p className="text-sm">+30 23990 20 393</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <div>
-                  <p className="font-medium">Email</p>
-                  <p className="text-sm">info@thessprint.gr</p>
+                
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <p className="text-sm">info@thessprint.gr</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex justify-center md:justify-end items-center">
-            <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="FSC Logo" className="h-32 w-auto" />
+            <div className="flex items-center">
+              <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="FSC Logo" className="h-32 w-auto" />
+            </div>
           </div>
         </div>
 
