@@ -67,48 +67,12 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="bg-background rounded-2xl p-8 shadow-lg">
-              <div className="text-center mb-8">
-                <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-primary-foreground">20+</span>
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Χρόνια Εμπειρίας</h3>
-                <p className="text-muted-foreground">στις γραφικές τέχνες</p>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-foreground">Ποιότητα Εκτύπωσης</span>
-                  <span className="text-sm text-primary font-semibold">99.8%</span>
-                </div>
-                <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{
-                  width: '99.8%'
-                }}></div>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-foreground">Ικανοποίηση Πελατών</span>
-                  <span className="text-sm text-primary font-semibold">98%</span>
-                </div>
-                <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{
-                  width: '98%'
-                }}></div>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-foreground">Έγκαιρη Παράδοση</span>
-                  <span className="text-sm text-primary font-semibold">95%</span>
-                </div>
-                <div className="w-full bg-muted rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{
-                  width: '95%'
-                }}></div>
-                </div>
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src="/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png" 
+                alt="ThessPrint Company" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
