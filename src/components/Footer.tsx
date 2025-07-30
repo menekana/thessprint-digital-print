@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <img src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
@@ -16,8 +16,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          
 
           <div>
             <h3 className="text-lg font-semibold mb-6">Επικοινωνία</h3>
@@ -47,12 +45,15 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
+          <div className="flex justify-center md:justify-end items-center">
+            <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="FSC Logo" className="h-32 w-auto" />
+          </div>
         </div>
 
         <div className="border-t border-secondary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/60">
             <p>© 2025 ThessPrint.</p>
-            <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="FSC Logo" className="h-12 w-auto mt-4 md:mt-0" />
           </div>
         </div>
       </div>
