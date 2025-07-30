@@ -1,44 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Clock } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-import { useEffect, useState } from "react";
 const HeroSection = () => {
-  const [api, setApi] = useState<any>();
-  const heroImages = [{
+  const heroImage = {
     desktop: "/lovable-uploads/8a401504-2366-43a8-97e3-70e66b83848c.png",
     mobile: "/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png",
     alt: "ThessPrint Facility Main View"
-  }, {
-    desktop: "/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png",
-    mobile: "/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png",
-    alt: "ThessPrint Production Floor"
-  }];
-  useEffect(() => {
-    if (!api) return;
-    const interval = setInterval(() => {
-      api.scrollNext();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [api]);
+  };
   return <section className="bg-background py-8 lg:py-16">
       <div className="container mx-auto px-6">
-        {/* Hero Images Carousel */}
+        {/* Hero Image */}
         <div className="mb-12 lg:mb-16 relative">
-          <Carousel setApi={setApi} className="w-full" opts={{
-          align: "start",
-          loop: true
-        }}>
-            <CarouselContent>
-              {heroImages.map((image, index) => <CarouselItem key={index}>
-                  {/* Mobile Image */}
-                  <img src={image.mobile} alt={image.alt} className="w-full h-auto rounded-lg shadow-lg object-cover object-top max-h-[70vh] block md:hidden" />
-                  {/* Desktop Image */}
-                  <img src={image.desktop} alt={image.alt} className="w-full h-auto rounded-lg shadow-lg object-cover object-top max-h-[70vh] hidden md:block" />
-                </CarouselItem>)}
-            </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
-          </Carousel>
+          {/* Mobile Image */}
+          <img src={heroImage.mobile} alt={heroImage.alt} className="w-full h-auto rounded-lg shadow-lg object-cover object-top max-h-[70vh] block md:hidden" />
+          {/* Desktop Image */}
+          <img src={heroImage.desktop} alt={heroImage.alt} className="w-full h-auto rounded-lg shadow-lg object-cover object-top max-h-[70vh] hidden md:block" />
         </div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
