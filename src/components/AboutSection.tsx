@@ -17,7 +17,9 @@ const AboutSection = () => {
                   <Award className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">ThessPrecision</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Precision
+                  </h3>
                   <p className="text-muted-foreground">
                     Ποιότητα, πιστή τήρηση προδιαγραφών
                   </p>
@@ -30,7 +32,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    ThessPerformance
+                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Performance
                   </h3>
                   <p className="text-muted-foreground">
                     Σταθερά υψηλή απόδοση σε ταχύτητα και ποιότητα
@@ -44,7 +46,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    ThessProfessionalism
+                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Professionalism
                   </h3>
                   <p className="text-muted-foreground">
                     Επαγγελματισμός στη συμπεριφορά και στην εξυπηρέτηση
@@ -58,7 +60,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    ThessPartnership
+                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Partnership
                   </h3>
                   <p className="text-muted-foreground">
                     Εστίαση στη συνεργασία με πελάτες και προμηθευτές
