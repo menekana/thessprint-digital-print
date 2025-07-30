@@ -30,14 +30,10 @@ const CallToActionSection = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-primary-foreground/90 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-primary-foreground/90 justify-items-center">
             <div className="text-center">
               <h3 className="font-semibold mb-2">Γρήγορη Ανταπόκριση</h3>
               <p className="text-sm">Απαντάμε σε όλες τις επικοινωνίες εντός 24 ωρών</p>
-            </div>
-            <div className="text-center">
-              <h3 className="font-semibold mb-2">Δωρεάν Προσφορά</h3>
-              <p className="text-sm">Λάβετε λεπτομερή προσφορά χωρίς καμία υποχρέωση</p>
             </div>
             <div className="text-center">
               <h3 className="font-semibold mb-2">Εξειδικευμένη Συμβουλή</h3>
