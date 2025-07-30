@@ -18,11 +18,11 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Precision
+                    <span style={{
+                    color: 'rgb(185,135,71)'
+                  }}>Thess</span>Precision
                   </h3>
-                  <p className="text-muted-foreground">
-                    Ποιότητα, πιστή τήρηση προδιαγραφών
-                  </p>
+                  <p className="text-muted-foreground">Πιστή τήρηση προδιαγραφών</p>
                 </div>
               </div>
 
@@ -32,11 +32,11 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Performance
+                    <span style={{
+                    color: 'rgb(185,135,71)'
+                  }}>Thess</span>Performance
                   </h3>
-                  <p className="text-muted-foreground">
-                    Σταθερά υψηλή απόδοση σε ταχύτητα και ποιότητα
-                  </p>
+                  <p className="text-muted-foreground">Υψηλή ποιότητα και ταχύτητα ολοκλήρωσης</p>
                 </div>
               </div>
 
@@ -46,11 +46,11 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Professionalism
+                    <span style={{
+                    color: 'rgb(185,135,71)'
+                  }}>Thess</span>Professionalism
                   </h3>
-                  <p className="text-muted-foreground">
-                    Επαγγελματισμός στη συμπεριφορά και στην εξυπηρέτηση
-                  </p>
+                  <p className="text-muted-foreground">Συνέπεια στη συνεννόηση και στην τήρηση χρονοδιαγράμματος</p>
                 </div>
               </div>
 
@@ -60,21 +60,17 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    <span style={{color: 'rgb(185,135,71)'}}>Thess</span>Partnership
+                    <span style={{
+                    color: 'rgb(185,135,71)'
+                  }}>Thess</span>Partnership
                   </h3>
-                  <p className="text-muted-foreground">
-                    Εστίαση στη συνεργασία με πελάτες και προμηθευτές
-                  </p>
+                  <p className="text-muted-foreground">Εστίαση στην άριστη συνεργασία με πελάτες και προμηθευτές</p>
                 </div>
               </div>
             </div>
 
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src="/lovable-uploads/96fe9746-516d-411f-9bfd-4cb5e970d822.png" 
-                alt="ThessPrint Printing Process - Yellow Ink Application"
-                className="w-full h-full object-cover"
-              />
+              <img src="/lovable-uploads/96fe9746-516d-411f-9bfd-4cb5e970d822.png" alt="ThessPrint Printing Process - Yellow Ink Application" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
