@@ -69,8 +69,8 @@ const AboutSection = () => {
 
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/lovable-uploads/c459e49d-a37e-4a3a-b3ce-e4b43db71c90.png" 
-                alt="ThessPrint Statistics - 20+ Years Experience" 
+                src="/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png" 
+                alt="ThessPrint Printing Process - Professional Ink Application" 
                 className="w-full h-full object-cover"
               />
             </div>
