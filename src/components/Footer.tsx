@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/60">
             <p>© 2025 ThessPrint.</p>
-            
+            <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="FSC Logo" className="h-12 w-auto mt-4 md:mt-0" />
           </div>
         </div>
       </div>
