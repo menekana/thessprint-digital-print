@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail } from "lucide-react";
-
 const CallToActionSection = () => {
-  return (
-    <section className="bg-gradient-to-r from-primary to-primary-dark py-20">
+  return <section className="bg-gradient-to-r from-primary to-primary-dark py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-primary-foreground mb-6">
@@ -35,10 +33,7 @@ const CallToActionSection = () => {
               <h3 className="font-semibold mb-2">Γρήγορη Ανταπόκριση</h3>
               <p className="text-sm">Απαντάμε σε όλες τις επικοινωνίες εντός 24 ωρών</p>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold mb-2">Δωρεάν Προσφορά</h3>
-              <p className="text-sm">Λάβετε λεπτομερή προσφορά χωρίς καμία υποχρέωση</p>
-            </div>
+            
             <div className="text-center">
               <h3 className="font-semibold mb-2">Εξειδικευμένη Συμβουλή</h3>
               <p className="text-sm">Συμβουλευτική για την καλύτερη λύση εκτύπωσης</p>
@@ -46,8 +41,6 @@ const CallToActionSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CallToActionSection;
