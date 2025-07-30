@@ -41,8 +41,8 @@ const HeroSection = () => {
           </Carousel>
         </div>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
-            Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων{" "}
+          <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
+            <span style={{ color: 'rgb(94,96,98)' }}>Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων</span>{" "}
             <span className="text-amber-600">thessprint.</span>
           </h1>
           
