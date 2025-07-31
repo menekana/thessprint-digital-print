@@ -20,7 +20,7 @@ const HeroSection = () => {
             <span style={{
             color: 'rgb(94,96,98)'
           }}>Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων</span>{" "}
-            <span className="text-amber-600">print</span><span style={{
+            <span className="text-amber-600">thess</span><span style={{
             color: 'rgb(94,96,98)'
           }}>print.</span>
           </h1>
