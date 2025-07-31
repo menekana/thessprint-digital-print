@@ -17,8 +17,12 @@ const HeroSection = () => {
         </div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
-            <span style={{ color: 'rgb(94,96,98)' }}>Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων</span>{" "}
-            <span className="text-amber-600">thess</span><span style={{ color: 'rgb(94,96,98)' }}>print.</span>
+            <span style={{
+            color: 'rgb(94,96,98)'
+          }}>Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων</span>{" "}
+            <span className="text-amber-600">thess</span><span style={{
+            color: 'rgb(94,96,98)'
+          }}>print.</span>
           </h1>
           
           <p className="text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">προσφέρει ποιοτικές, καινοτόμες και αποτελεσματικές λύσεις παραγωγής εντύπων, με γνώμονα την απόλυτη ικανοποίηση των πελατών-συνεργατών της.</p>
@@ -51,7 +55,7 @@ const HeroSection = () => {
                 <Award className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Πιστοποιήσεις</h3>
-              <p className="text-sm text-muted-foreground">Ποιότητας ISO 9001:2015, Περιβάλλοντος ISO 14001:2004, Προέλευσηες ψαρτιού  FSC/CoC πιστοποιημένο</p>
+              <p className="text-sm text-muted-foreground">Ποιότητας ISO 9001:2015, Περιβάλλοντος ISO 14001:2004, Προέλευσης χαρτιού  FSC/CoC πιστοποιημένο</p>
             </div>
             
             <div className="flex flex-col items-center text-center">
