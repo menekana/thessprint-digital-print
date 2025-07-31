@@ -5,7 +5,11 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-              Γιατί <span style={{ color: 'rgb(185,135,71)' }}>thess</span><span style={{ color: 'rgb(94,96,98)' }}>print</span>
+              Γιατί <span style={{
+              color: 'rgb(185,135,71)'
+            }}>print.</span><span style={{
+              color: 'rgb(94,96,98)'
+            }}>print</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Με συνεχή επένδυση στην τεχνολογία, προσφέρουμε υπηρεσίες υψηλής ποιότητας που ξεπερνούν τις προσδοκίες.</p>
           </div>
