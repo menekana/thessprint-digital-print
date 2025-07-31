@@ -7,7 +7,7 @@ const AboutSection = () => {
             <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
               Γιατί <span style={{
               color: 'rgb(185,135,71)'
-            }}>print.</span><span style={{
+            }}>thess</span><span style={{
               color: 'rgb(94,96,98)'
             }}>print</span>
             </h2>
