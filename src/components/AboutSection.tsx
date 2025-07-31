@@ -20,7 +20,7 @@ const AboutSection = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     <span style={{
                     color: 'rgb(185,135,71)'
-                  }}>Thess</span>Precision
+                  }}>thess</span>Precision
                   </h3>
                   <p className="text-muted-foreground">Πιστή τήρηση προδιαγραφών</p>
                 </div>
@@ -34,7 +34,7 @@ const AboutSection = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     <span style={{
                     color: 'rgb(185,135,71)'
-                  }}>Thess</span>Performance
+                  }}>thess</span>Performance
                   </h3>
                   <p className="text-muted-foreground">Υψηλή ποιότητα και ταχύτητα ολοκλήρωσης</p>
                 </div>
@@ -48,7 +48,7 @@ const AboutSection = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     <span style={{
                     color: 'rgb(185,135,71)'
-                  }}>Thess</span>Professionalism
+                  }}>thess</span>Professionalism
                   </h3>
                   <p className="text-muted-foreground">Συνέπεια στη συνεννόηση και στην τήρηση χρονοδιαγράμματος</p>
                 </div>
@@ -62,7 +62,7 @@ const AboutSection = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     <span style={{
                     color: 'rgb(185,135,71)'
-                  }}>Thess</span>Partnership
+                  }}>thess</span>Partnership
                   </h3>
                   <p className="text-muted-foreground">Εστίαση στην άριστη συνεργασία με πελάτες και προμηθευτές</p>
                 </div>
