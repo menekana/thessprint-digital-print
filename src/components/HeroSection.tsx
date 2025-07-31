@@ -20,7 +20,7 @@ const HeroSection = () => {
             <span style={{
             color: 'rgb(94,96,98)'
           }}>Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων</span>{" "}
-            <span className="text-amber-600">thess</span><span style={{
+            <span className="text-amber-600">print</span><span style={{
             color: 'rgb(94,96,98)'
           }}>print.</span>
           </h1>
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 <Award className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Πιστοποιήσεις</h3>
-              <p className="text-sm text-muted-foreground">Ποιότητας ISO 9001:2015, Περιβάλλοντος ISO 14001:2004, Προέλευσης χαρτιού  FSC/CoC πιστοποιημένο</p>
+              <p className="text-sm text-muted-foreground">Ποιότητας ISO 9001:2015 Περιβάλλοντος ISO 14001:2004 Προέλευσης χαρτιού  FSC/CoC</p>
             </div>
             
             <div className="flex flex-col items-center text-center">

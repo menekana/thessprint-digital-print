@@ -13,10 +13,7 @@ const PortfolioSection = () => {
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
             Οραματιστείτε το <span className="text-primary">Αποτέλεσμα</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Δείτε παραδείγματα του τι μπορούμε να δημιουργήσουμε για εσάς - 
-            από επαγγελματικά έντυπα έως εταιρικό υλικό υψηλής ποιότητας.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Δείτε παραδείγματα του τι μπορούμε να παράγουμε για εσάς - από επαγγελματικά έντυπα έως υλικό εταιρικής ταυτότητας υψηλής ποιότητας.</p>
           <p className="text-sm text-muted-foreground/70 max-w-3xl mx-auto mt-3">
             * Αυτά είναι παραδείγματα και mockups για επίδειξη δυνατοτήτων, όχι πραγματικά προϊόντα πελατών.
           </p>
@@ -26,11 +23,7 @@ const PortfolioSection = () => {
           {/* Portfolio Placeholders */}
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="aspect-[4/3] relative overflow-hidden">
-              <img 
-                src={corporateCatalogs} 
-                alt="Εταιρικοί Κατάλογοι"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={corporateCatalogs} alt="Εταιρικοί Κατάλογοι" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
@@ -41,11 +34,7 @@ const PortfolioSection = () => {
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="aspect-[4/3] relative overflow-hidden">
-              <img 
-                src={booksMagazines} 
-                alt="Εκδοτικά Έργα"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={booksMagazines} alt="Εκδοτικά Έργα" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
@@ -56,11 +45,7 @@ const PortfolioSection = () => {
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="aspect-[4/3] relative overflow-hidden">
-              <img 
-                src={marketingMaterials} 
-                alt="Διαφημιστικό Υλικό"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={marketingMaterials} alt="Διαφημιστικό Υλικό" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
@@ -71,41 +56,29 @@ const PortfolioSection = () => {
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="aspect-[4/3] relative overflow-hidden">
-              <img 
-                src={packaging} 
-                alt="Εκτυπώσεις Συσκευασιών"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={packaging} alt="Εκτυπώσεις Συσκευασιών" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-2">Εκτυπώσεις Συσκευασιών</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Χάρτινη Συσκευασία</h3>
               <p className="text-muted-foreground text-sm">Ειδικές κατασκευές συσκευασιών προϊόντων</p>
             </div>
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="aspect-[4/3] relative overflow-hidden">
-              <img 
-                src={businessStationery} 
-                alt="Επαγγελματικό Υλικό"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={businessStationery} alt="Επαγγελματικό Υλικό" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-2">Επαγγελματικό Υλικό</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Υλικό Εταιρικής Ταυτότητας</h3>
               <p className="text-muted-foreground text-sm">Επαγγελματικές κάρτες, φακέλους και έντυπα</p>
             </div>
           </div>
 
           <div className="group relative bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="aspect-[4/3] relative overflow-hidden">
-              <img 
-                src={customProjects} 
-                alt="Προσαρμοσμένα Έργα"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={customProjects} alt="Προσαρμοσμένα Έργα" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6">
