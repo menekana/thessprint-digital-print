@@ -2,10 +2,10 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const EquipmentSection = () => {
   const equipmentImages = [
-    { id: 1, src: "/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png", alt: "Λεπτομέρεια εκτυπωτικής μηχανής σε λειτουργία" },
-    { id: 2, src: "/lovable-uploads/c459e49d-a37e-4a3a-b3ce-e4b43db71c90.png", alt: "Εξοπλισμός επεξεργασίας χαρτιού με ρολά" },
-    { id: 3, src: "/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png", alt: "Εκτυπωτική μηχανή MITSUBISHI με έτοιμα προϊόντα σε παλέτες" },
-    { id: 4, src: "/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png", alt: "Πλήρης άποψη της μεγάλης εκτυπωτικής μηχανής MITSUBISHI" },
+    { id: 1, src: "/equipment-1.png", alt: "Λεπτομέρεια εκτυπωτικής μηχανής σε λειτουργία" },
+    { id: 2, src: "/equipment-2.png", alt: "Εξοπλισμός επεξεργασίας χαρτιού με ρολά" },
+    { id: 3, src: "/equipment-3.png", alt: "Εκτυπωτική μηχανή MITSUBISHI με έτοιμα προϊόντα σε παλέτες" },
+    { id: 4, src: "/equipment-4.png", alt: "Πλήρης άποψη της μεγάλης εκτυπωτικής μηχανής MITSUBISHI" },
   ];
 
   return (
