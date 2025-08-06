@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <img src="/Thessprint Logo.jpg" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
+            <img src="/thessprint-logo.jpg" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
               Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων ThessPrint 
               προσφέρει καινοτόμες λύσεις εκτύπωσης με γνώμονα την ποιότητα και 
@@ -13,9 +13,9 @@ const Footer = () => {
             
             {/* Certifications */}
             <div className="flex flex-wrap gap-4">
-              <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-16 w-auto" />
-              <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-16 w-auto" />
-              <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-16 w-auto" />
+              <img src="/iso-9001-2015-cert.jpg" alt="ISO 9001:2015 Certification" className="h-16 w-auto" />
+              <img src="/iso-14001-2015-cert.jpg" alt="ISO 14001:2015 Certification" className="h-16 w-auto" />
+              <img src="/fsc-cert.jpg" alt="FSC Certification" className="h-16 w-auto" />
             </div>
           </div>
 
