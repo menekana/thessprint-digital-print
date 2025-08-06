@@ -1,12 +1,11 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const EquipmentSection = () => {
-  // Placeholder images for now
   const equipmentImages = [
-    { id: 1, src: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop", alt: "Εκτυπωτικός εξοπλισμός 1" },
-    { id: 2, src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop", alt: "Εκτυπωτικός εξοπλισμός 2" },
-    { id: 3, src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop", alt: "Εκτυπωτικός εξοπλισμός 3" },
-    { id: 4, src: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&h=600&fit=crop", alt: "Εκτυπωτικός εξοπλισμός 4" },
+    { id: 1, src: "/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png", alt: "Εκτυπωτική μηχανή MITSUBISHI TANDEM DIAMOND" },
+    { id: 2, src: "/lovable-uploads/c459e49d-a37e-4a3a-b3ce-e4b43db71c90.png", alt: "Βιβλιοδετικός εξοπλισμός MÜLLER MARTINI" },
+    { id: 3, src: "/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png", alt: "Κοπτικές μονάδες και διπλωτικές μηχανές" },
+    { id: 4, src: "/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png", alt: "Σύγχρονος εξοπλισμός τυπογραφείου ThessPrint" },
   ];
 
   return (
