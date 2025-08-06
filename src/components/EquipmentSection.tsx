@@ -2,10 +2,10 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const EquipmentSection = () => {
   const equipmentImages = [
-    { id: 1, src: "/lovable-uploads/89d6d3bc-abbb-42fc-a197-aaca2306d3bf.png", alt: "Εκτυπωτική μηχανή MITSUBISHI με έτοιμα προϊόντα" },
-    { id: 2, src: "/lovable-uploads/ba9a7ff8-8232-49bb-8f8c-a0c87dd7c345.png", alt: "Εκτυπωτικός εξοπλισμός MITSUBISHI offset" },
-    { id: 3, src: "/lovable-uploads/b60d5bf2-509f-4f8b-ae3d-6867b9d4a983.png", alt: "Διαδικασία εκτύπωσης σε εξέλιξη" },
-    { id: 4, src: "/lovable-uploads/38b5165b-aa4e-4bbc-91b8-b7dbd5b03467.png", alt: "Λεπτομέρεια εκτυπωτικής μηχανής με ρολά χαρτιού" },
+    { id: 1, src: "/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png", alt: "Εκτυπωτική μηχανή MITSUBISHI με έτοιμα προϊόντα" },
+    { id: 2, src: "/lovable-uploads/c459e49d-a37e-4a3a-b3ce-e4b43db71c90.png", alt: "Εκτυπωτικός εξοπλισμός MITSUBISHI offset" },
+    { id: 3, src: "/lovable-uploads/bfbbc7bd-22e7-4f54-abba-a0bbc99c53ef.png", alt: "Διαδικασία εκτύπωσης σε εξέλιξη" },
+    { id: 4, src: "/lovable-uploads/b030c290-50f0-43fc-af99-4cfd28efb882.png", alt: "Λεπτομέρεια εκτυπωτικής μηχανής με ρολά χαρτιού" },
   ];
 
   return (
