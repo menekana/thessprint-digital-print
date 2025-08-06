@@ -17,41 +17,43 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-8 items-start">
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold mb-6">Επικοινωνία</h3>
-              <div className="space-y-4 text-secondary-foreground/80">
-                <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium">Διεύθυνση</p>
-                    <p className="text-sm">ΒΙ.ΠΑ Λάκκωμα Χαλκιδικής, ΤΘ 129 ΤΚ 63080 Λάκκωμα</p>
-                  </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Επικοινωνία</h3>
+            <div className="space-y-4 text-secondary-foreground/80">
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium">Διεύθυνση</p>
+                  <p className="text-sm">ΒΙ.ΠΑ Λάκκωμα Χαλκιδικής, ΤΘ 129 ΤΚ 63080 Λάκκωμα</p>
                 </div>
-                
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <div>
-                    <p className="font-medium">Τηλέφωνο</p>
-                    <p className="text-sm">+30 23990 20 393</p>
-                  </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                <div>
+                  <p className="font-medium">Τηλέφωνο</p>
+                  <p className="text-sm">+30 23990 20 393</p>
                 </div>
-                
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-sm">info@thessprint.gr</p>
-                  </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+                <div>
+                  <p className="font-medium">Email</p>
+                  <p className="text-sm">info@thessprint.gr</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="flex items-center gap-3">
-              <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-20 w-auto" />
-              <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-20 w-auto" />
-              <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-20 w-auto" />
-            </div>
+        {/* Certifications Section */}
+        <div className="flex flex-col items-center mt-8 pt-8 border-t border-secondary-foreground/20">
+          <h3 className="text-lg font-semibold mb-4">Πιστοποιήσεις</h3>
+          <div className="flex flex-col space-y-3">
+            <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-16 w-auto mx-auto" />
+            <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-16 w-auto mx-auto" />
+            <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-16 w-auto mx-auto" />
           </div>
         </div>
 
