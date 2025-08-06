@@ -2,10 +2,10 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const EquipmentSection = () => {
   const equipmentImages = [
-    { id: 1, src: "/equipment-1.png", alt: "Λεπτομέρεια εκτυπωτικής μηχανής σε λειτουργία" },
-    { id: 2, src: "/equipment-2.png", alt: "Εξοπλισμός επεξεργασίας χαρτιού με ρολά" },
-    { id: 3, src: "/equipment-3.png", alt: "Εκτυπωτική μηχανή MITSUBISHI με έτοιμα προϊόντα σε παλέτες" },
-    { id: 4, src: "/equipment-4.png", alt: "Πλήρης άποψη της μεγάλης εκτυπωτικής μηχανής MITSUBISHI" },
+    { id: 1, src: "/new_10χρωμη MITSUBISHI TANDEM - gold.jpg", alt: "10χρωμη MITSUBISHI TANDEM DIAMOND εκτυπωτική μηχανή" },
+    { id: 2, src: "/new_5χρωμη MITSUBISHI - gold.jpg", alt: "5χρωμη MITSUBISHI 3F-16000 εκτυπωτική μηχανή" },
+    { id: 3, src: "/new_Εισαγωγή σακούλας - gold.jpg", alt: "Σακουλοποιητική μηχανή IMPAL STOCK για προστασία εντύπων" },
+    { id: 4, src: "/new_Καρφίτσα - gold.jpg", alt: "Εξοπλισμός βιβλιοδεσίας και διαμόρφωσης" },
   ];
 
   return (
