@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src="/lovable-uploads/fd9211ca-c294-455b-8ffd-04a63477fd26.png" alt="ThessPrint Logo" className="h-12 w-auto" />
+            <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="ThessPrint Logo" className="h-12 w-auto" />
           </div>
           
           {/* Desktop Navigation - Aligned Right */}
