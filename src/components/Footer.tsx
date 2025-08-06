@@ -47,8 +47,10 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex items-center">
-              <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="FSC Logo" className="h-32 w-auto" />
+            <div className="flex items-center gap-3">
+              <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-20 w-auto" />
+              <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-20 w-auto" />
+              <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-20 w-auto" />
             </div>
           </div>
         </div>
