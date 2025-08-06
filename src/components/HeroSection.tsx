@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Clock } from "lucide-react";
 const HeroSection = () => {
   const heroImage = {
-    desktop: "/lovable-uploads/8a401504-2366-43a8-97e3-70e66b83848c.png",
-    mobile: "/lovable-uploads/ec04d02a-edbc-4955-9659-f3c193dfd56c.png",
-    alt: "ThessPrint Facility Main View"
+    desktop: "/public/thessprint_grass.jpg",
+    mobile: "/public/thessprint_grass.jpg",
+    alt: "ThessPrint Facility"
   };
   return <section className="bg-background py-8 lg:py-16">
       <div className="container mx-auto px-6">
