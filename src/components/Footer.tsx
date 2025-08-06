@@ -6,7 +6,10 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <img src="/thessprint-logo.jpg" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
+            <img src="/thessprint-logo.jpg" alt="ThessPrint Logo" className="h-12 w-auto mb-6" onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              console.log('Logo image failed to load');
+            }} />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
               Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων ThessPrint 
               προσφέρει καινοτόμες λύσεις εκτύπωσης με γνώμονα την ποιότητα και 
