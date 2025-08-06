@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
+            <img src="/lovable-uploads/7961ce5c-05a1-4f1f-9b3f-b55c57f5e8c6.png" alt="ThessPrint Logo" className="h-12 w-auto mb-6" />
             <p className="text-secondary-foreground/80 mb-6 leading-relaxed max-w-md">
               Η βιομηχανική εταιρεία γραφικών τεχνών και εκτυπώσεων ThessPrint 
               προσφέρει καινοτόμες λύσεις εκτύπωσης με γνώμονα την ποιότητα και 
@@ -15,9 +15,9 @@ const Footer = () => {
             
             {/* Certifications */}
             <div className="flex flex-wrap gap-4">
-              <img src="/iso-9001-2015-cert.jpg" alt="ISO 9001:2015 Certification" className="h-16 w-auto" />
-              <img src="/iso-14001-2015-cert.jpg" alt="ISO 14001:2015 Certification" className="h-16 w-auto" />
-              <img src="/fsc-cert.jpg" alt="FSC Certification" className="h-16 w-auto" />
+              <img src="/lovable-uploads/3e846a03-1565-4f61-8bdf-1a8e26ec6453.png" alt="ISO 9001:2015 Certification" className="h-16 w-auto" />
+              <img src="/lovable-uploads/8a401504-2366-43a8-97e3-70e66b83848c.png" alt="ISO 14001:2015 Certification" className="h-16 w-auto" />
+              <img src="/lovable-uploads/7961ce5c-05a1-4f1f-9b3f-b55c57f5e8c6.png" alt="FSC Certification" className="h-16 w-auto" />
             </div>
           </div>
 
