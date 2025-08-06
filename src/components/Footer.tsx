@@ -10,10 +10,12 @@ const Footer = () => {
               προσφέρει καινοτόμες λύσεις εκτύπωσης με γνώμονα την ποιότητα και 
               την ικανοποίηση των πελατών.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://facebook.com/ThessPrint" className="bg-primary/10 p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-5 w-5" />
-              </a>
+            
+            {/* Certifications */}
+            <div className="flex flex-wrap gap-4">
+              <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-16 w-auto" />
+              <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-16 w-auto" />
+              <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-16 w-auto" />
             </div>
           </div>
 
@@ -42,6 +44,13 @@ const Footer = () => {
                   <p className="font-medium">Email</p>
                   <p className="text-sm">info@thessprint.gr</p>
                 </div>
+              </div>
+              
+              <div className="flex items-center space-x-3 pt-4">
+                <a href="https://facebook.com/ThessPrint" className="bg-primary/10 p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <span className="text-sm">Ακολουθήστε μας</span>
               </div>
             </div>
           </div>
