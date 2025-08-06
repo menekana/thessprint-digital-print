@@ -51,7 +51,9 @@ const Footer = () => {
         {/* Certifications Section */}
         <div className="flex flex-col items-center mt-8 pt-8 border-t border-secondary-foreground/20">
           <h3 className="text-lg font-semibold mb-6">Πιστοποιήσεις</h3>
-          <div className="w-full max-w-xs mx-auto">
+          
+          {/* Mobile Carousel */}
+          <div className="w-full max-w-xs mx-auto md:hidden">
             <Carousel className="w-full" opts={{ align: "center", loop: true }}>
               <CarouselContent>
                 <CarouselItem>
@@ -73,6 +75,13 @@ const Footer = () => {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
+          </div>
+
+          {/* Desktop Horizontal Layout */}
+          <div className="hidden md:flex items-center gap-6">
+            <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-24 w-auto" />
+            <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-24 w-auto" />
+            <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-24 w-auto" />
           </div>
         </div>
 
