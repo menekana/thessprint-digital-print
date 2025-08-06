@@ -1,5 +1,4 @@
 import { MapPin, Phone, Mail, Facebook } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-6 py-16">
@@ -45,43 +44,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Certifications Section */}
-        <div className="flex flex-col items-center mt-8 pt-8 border-t border-secondary-foreground/20">
-          <h3 className="text-lg font-semibold mb-6">Πιστοποιήσεις</h3>
-          
-          {/* Mobile Carousel */}
-          <div className="w-full max-w-xs mx-auto md:hidden">
-            <Carousel className="w-full" opts={{ align: "center", loop: true }}>
-              <CarouselContent>
-                <CarouselItem>
-                  <div className="flex justify-center">
-                    <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-32 w-auto" />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="flex justify-center">
-                    <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-32 w-auto" />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="flex justify-center">
-                    <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-32 w-auto" />
-                  </div>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-
-          {/* Desktop Horizontal Layout */}
-          <div className="hidden md:flex items-center gap-6">
-            <img src="/2026 03 08 ISO 9001-2015_page-0001.jpg" alt="ISO 9001:2015 Certification" className="h-24 w-auto" />
-            <img src="/2026 04 15 ISO 14001-2015_page-0001.jpg" alt="ISO 14001:2015 Certification" className="h-24 w-auto" />
-            <img src="/THESSPRINT S.A. FSC 2025-01_page-0001.jpg" alt="FSC Certification" className="h-24 w-auto" />
           </div>
         </div>
 
