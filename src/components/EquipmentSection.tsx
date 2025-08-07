@@ -2,10 +2,10 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const EquipmentSection = () => {
   const equipmentImages = [
-    { id: 1, src: "https://gilhzzuhrbsoiypeajfh.supabase.co/storage/v1/object/public/website-images/new_10χρωμη MITSUBISHI TANDEM - gold.jpg", alt: "10χρωμη MITSUBISHI TANDEM DIAMOND εκτυπωτική μηχανή" },
-    { id: 2, src: "https://gilhzzuhrbsoiypeajfh.supabase.co/storage/v1/object/public/website-images/new_5χρωμη MITSUBISHI - gold.jpg", alt: "5χρωμη MITSUBISHI 3F-16000 εκτυπωτική μηχανή" },
-    { id: 3, src: "https://gilhzzuhrbsoiypeajfh.supabase.co/storage/v1/object/public/website-images/new_Εισαγωγή σακούλας - gold.jpg", alt: "Σακουλοποιητική μηχανή IMPAL STOCK για προστασία εντύπων" },
-    { id: 4, src: "https://gilhzzuhrbsoiypeajfh.supabase.co/storage/v1/object/public/website-images/new_Καρφίτσα - gold.jpg", alt: "Εξοπλισμός βιβλιοδεσίας και διαμόρφωσης" },
+    { id: 1, src: "https://drive.google.com/uc?export=view&id=1q_pDx_9BgqGmHjnbu6ttXRHQma58q4RE", alt: "10χρωμη MITSUBISHI TANDEM DIAMOND εκτυπωτική μηχανή" },
+    { id: 2, src: "https://drive.google.com/uc?export=view&id=1zRD0eMizki3LsfFt0fosduLiafCAzS-U", alt: "5χρωμη MITSUBISHI 3F-16000 εκτυπωτική μηχανή" },
+    { id: 3, src: "https://drive.google.com/uc?export=view&id=1ps3mKqs61UVteIZZD3O5GYrZhN2nHPDG", alt: "Σακουλοποιητική μηχανή IMPAL STOCK για προστασία εντύπων" },
+    { id: 4, src: "https://drive.google.com/uc?export=view&id=1LoIT-H5ZZ4keTmkeCv-3HR7GZGanFqTP", alt: "Εξοπλισμός βιβλιοδεσίας και διαμόρφωσης" },
   ];
 
   return (
