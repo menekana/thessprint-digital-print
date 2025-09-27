@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Cookie } from 'lucide-react';
 import { getConsentStatus, setConsentStatus, loadGoogleAnalytics } from '@/lib/cookieConsent';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -49,9 +57,37 @@ const CookieConsent = () => {
             </p>
             <p className="text-muted-foreground text-xs">
               Τα analytics cookies μας βοηθούν να βελτιώσουμε τις υπηρεσίες μας. 
-              <a href="#" className="text-primary hover:underline ml-1">
-                Πολιτική Απορρήτου
-              </a>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="text-primary hover:underline ml-1 underline-offset-2">
+                    Πολιτική Απορρήτου
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle>Πολιτική Απορρήτου</DialogTitle>
+                    <DialogDescription className="text-left space-y-4 text-sm leading-relaxed">
+                      <p>
+                        Σας ευχαριστούμε που εμπιστευτήκατε την thessprint. Γνωρίζουμε ότι η διαχείριση των προσωπικών σας δεδομένων είναι μια μεγάλη ευθύνη.
+                      </p>
+                      <p>
+                        Αποθηκεύουμε ή/και έχουμε πρόσβαση σε πληροφορίες σε μια συσκευή, όπως μοναδικά αναγνωριστικά σε cookies για την επεξεργασία προσωπικών δεδομένων.
+                      </p>
+                      <div>
+                        <p className="font-medium mb-2">Επεξεργαζόμαστε δεδομένα για να παρέχουμε:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>Χρήση ακριβών δεδομένων γεωγραφικής τοποθεσίας</li>
+                          <li>Ενεργή σάρωση των χαρακτηριστικών της συσκευής για αναγνώριση</li>
+                          <li>Αποθήκευση ή/και πρόσβαση σε πληροφορίες σε μια συσκευή</li>
+                          <li>Εξατομικευμένη διαφήμιση και περιεχόμενο</li>
+                          <li>Μέτρηση διαφήμισης και περιεχομένου</li>
+                          <li>Έρευνα κοινού και ανάπτυξη υπηρεσιών</li>
+                        </ul>
+                      </div>
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
             </p>
           </div>
         </div>
