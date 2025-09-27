@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Cookie } from 'lucide-react';
-import { getConsentStatus, setConsentStatus, loadGoogleAnalytics } from '@/lib/cookieConsent';
+import { getConsentStatus, setConsentStatus, loadGoogleAnalytics, loadGoogleTagManager } from '@/lib/cookieConsent';
 import {
   Dialog,
   DialogContent,
@@ -26,6 +26,7 @@ const CookieConsent = () => {
   const handleAccept = () => {
     setConsentStatus('accepted');
     loadGoogleAnalytics();
+    loadGoogleTagManager();
     hideBanner();
   };
 

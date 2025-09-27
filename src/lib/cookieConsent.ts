@@ -32,3 +32,28 @@ export const loadGoogleAnalytics = () => {
     (window as any).gtag = gtag;
   };
 };
+
+export const loadGoogleTagManager = () => {
+  // Only load GTM if user has accepted cookies
+  if (getConsentStatus() !== 'accepted') return;
+
+  // Initialize dataLayer if it doesn't exist
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  (window as any).dataLayer.push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  });
+
+  // Create GTM script element
+  const gtmScript = document.createElement('script');
+  gtmScript.async = true;
+  gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MT8GHWLV';
+  
+  // Insert GTM script before the first script tag
+  const firstScript = document.getElementsByTagName('script')[0];
+  if (firstScript && firstScript.parentNode) {
+    firstScript.parentNode.insertBefore(gtmScript, firstScript);
+  } else {
+    document.head.appendChild(gtmScript);
+  }
+};
