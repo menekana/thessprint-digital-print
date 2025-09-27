@@ -6,6 +6,7 @@ import PortfolioSection from "@/components/PortfolioSection";
 import EquipmentSection from "@/components/EquipmentSection";
 import CallToActionSection from "@/components/CallToActionSection";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <EquipmentSection />
       <CallToActionSection />
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
