@@ -72,21 +72,37 @@ export const loadGoogleTagManager = () => {
 // Update consent mode based on user choice
 export const updateConsentMode = (accepted: boolean) => {
   const gtag = (window as any).gtag;
-  if (!gtag) return;
+  const dataLayer = (window as any).dataLayer;
+  
+  if (!gtag || !dataLayer) return;
   
   if (accepted) {
+    // Update consent mode
     gtag('consent', 'update', {
       'analytics_storage': 'granted',
       'ad_storage': 'granted',
       'functionality_storage': 'granted',
       'personalization_storage': 'granted'
     });
+    
+    // Send custom event to trigger GA tag in GTM
+    dataLayer.push({
+      'event': 'consent_granted',
+      'consent_type': 'analytics'
+    });
   } else {
+    // Update consent mode to denied
     gtag('consent', 'update', {
       'analytics_storage': 'denied',
       'ad_storage': 'denied',
       'functionality_storage': 'denied',
       'personalization_storage': 'denied'
+    });
+    
+    // Send custom event for consent rejection (optional for GTM triggers)
+    dataLayer.push({
+      'event': 'consent_rejected',
+      'consent_type': 'analytics'
     });
   }
 };
