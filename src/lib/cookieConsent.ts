@@ -87,7 +87,7 @@ export const updateConsentMode = (accepted: boolean) => {
     
     // Send custom event to trigger GA tag in GTM
     dataLayer.push({
-      'event': 'consent_granted',
+      'event': 'analytics_consent_granted',
       'consent_type': 'analytics'
     });
   } else {
