@@ -11,32 +11,33 @@ export const setConsentStatus = (status: ConsentStatus) => {
   localStorage.setItem(CONSENT_KEY, status);
 };
 
-export const loadGoogleAnalytics = () => {
-  // Only load GA if user has accepted cookies
-  if (getConsentStatus() !== 'accepted') return;
-
-  // Create GA script element
-  const gaScript = document.createElement('script');
-  gaScript.async = true;
-  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-WC6JWQ9YRR';
-  document.head.appendChild(gaScript);
-
-  // Initialize gtag
-  gaScript.onload = () => {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    function gtag(...args: any[]) {
-      (window as any).dataLayer.push(args);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-WC6JWQ9YRR');
-    (window as any).gtag = gtag;
-  };
+// Set default consent mode (called on page load)
+export const setConsentModeDefaults = () => {
+  // Initialize dataLayer
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  
+  function gtag(...args: any[]) {
+    (window as any).dataLayer.push(args);
+  }
+  
+  // Set default consent to denied
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 2000,
+  });
+  
+  (window as any).gtag = gtag;
 };
 
+// Load GTM with consent mode (called on page load)
 export const loadGoogleTagManager = () => {
-  // Only load GTM if user has accepted cookies
-  if (getConsentStatus() !== 'accepted') return;
-
+  // Set consent defaults first
+  setConsentModeDefaults();
+  
   // Initialize dataLayer if it doesn't exist
   (window as any).dataLayer = (window as any).dataLayer || [];
   (window as any).dataLayer.push({
@@ -55,5 +56,37 @@ export const loadGoogleTagManager = () => {
     firstScript.parentNode.insertBefore(gtmScript, firstScript);
   } else {
     document.head.appendChild(gtmScript);
+  }
+  
+  // After GTM loads, check existing consent and update if needed
+  gtmScript.onload = () => {
+    const consentStatus = getConsentStatus();
+    if (consentStatus === 'accepted') {
+      updateConsentMode(true);
+    } else if (consentStatus === 'rejected') {
+      updateConsentMode(false);
+    }
+  };
+};
+
+// Update consent mode based on user choice
+export const updateConsentMode = (accepted: boolean) => {
+  const gtag = (window as any).gtag;
+  if (!gtag) return;
+  
+  if (accepted) {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'functionality_storage': 'granted',
+      'personalization_storage': 'granted'
+    });
+  } else {
+    gtag('consent', 'update', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'functionality_storage': 'denied',
+      'personalization_storage': 'denied'
+    });
   }
 };
