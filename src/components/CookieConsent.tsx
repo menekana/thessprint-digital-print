@@ -24,7 +24,9 @@ const CookieConsent = () => {
   }, []);
 
   const handleAccept = () => {
+    console.log('🍪 [CookieConsent] Accept button clicked');
     setConsentStatus('accepted');
+    console.log('🍪 [CookieConsent] Calling updateConsentMode(true)');
     updateConsentMode(true);
     hideBanner();
   };
