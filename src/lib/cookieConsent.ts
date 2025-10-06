@@ -72,37 +72,48 @@ export const loadGoogleTagManager = () => {
 // Update consent mode based on user choice
 export const updateConsentMode = (accepted: boolean) => {
   const gtag = (window as any).gtag;
+  
+  // Initialize dataLayer if it doesn't exist
+  (window as any).dataLayer = (window as any).dataLayer || [];
   const dataLayer = (window as any).dataLayer;
   
-  if (!gtag || !dataLayer) return;
-  
   if (accepted) {
-    // Update consent mode
-    gtag('consent', 'update', {
-      'analytics_storage': 'granted',
-      'ad_storage': 'granted',
-      'functionality_storage': 'granted',
-      'personalization_storage': 'granted'
+    // STEP 1: Push cookie_consent_accepted event FIRST (no consent required)
+    dataLayer.push({
+      'event': 'cookie_consent_accepted',
+      'consent_type': 'analytics'
     });
     
-    // Send custom event to trigger GA tag in GTM
+    // STEP 2: Update consent mode (if gtag is available)
+    if (gtag) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'granted',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'granted'
+      });
+    }
+    
+    // STEP 3: Send analytics_consent_granted event (after consent is granted)
     dataLayer.push({
       'event': 'analytics_consent_granted',
       'consent_type': 'analytics'
     });
   } else {
-    // Update consent mode to denied
-    gtag('consent', 'update', {
-      'analytics_storage': 'denied',
-      'ad_storage': 'denied',
-      'functionality_storage': 'denied',
-      'personalization_storage': 'denied'
-    });
-    
-    // Send custom event for consent rejection (optional for GTM triggers)
+    // Push cookie rejection event first
     dataLayer.push({
-      'event': 'consent_rejected',
+      'event': 'cookie_consent_rejected',
       'consent_type': 'analytics'
     });
+    
+    // Update consent mode to denied (if gtag is available)
+    if (gtag) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied'
+      });
+    }
   }
 };
