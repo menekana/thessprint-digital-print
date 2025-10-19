@@ -69,11 +69,55 @@ export const loadGoogleTagManager = () => {
   };
 };
 
+// Load GA4 script directly
+const loadGA4Script = (): Promise<void> => {
+  return new Promise((resolve) => {
+    console.log('🍪 [loadGA4Script] Loading GA4 script...');
+    
+    // Check if GA4 script is already loaded
+    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+      console.log('🍪 [loadGA4Script] GA4 script already loaded');
+      resolve();
+      return;
+    }
+    
+    // Create GA4 script element
+    const ga4Script = document.createElement('script');
+    ga4Script.async = true;
+    ga4Script.src = 'https://www.googletagmanager.com/gtag/js?id=G-WC6JWWQ9YRR';
+    
+    ga4Script.onload = () => {
+      console.log('🍪 [loadGA4Script] GA4 script loaded successfully');
+      
+      // Initialize gtag
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      function gtag(...args: any[]) {
+        (window as any).dataLayer.push(args);
+      }
+      (window as any).gtag = gtag;
+      
+      // Configure GA4
+      gtag('js', new Date());
+      gtag('config', 'G-WC6JWWQ9YRR', {
+        'send_page_view': false // We'll send page_view manually
+      });
+      
+      console.log('🍪 [loadGA4Script] GA4 initialized with config');
+      resolve();
+    };
+    
+    ga4Script.onerror = () => {
+      console.error('🍪 [loadGA4Script] Failed to load GA4 script');
+      resolve(); // Resolve anyway to not block the flow
+    };
+    
+    document.head.appendChild(ga4Script);
+  });
+};
+
 // Update consent mode based on user choice
-export const updateConsentMode = (accepted: boolean) => {
+export const updateConsentMode = async (accepted: boolean) => {
   console.log('🍪 [updateConsentMode] Called with accepted:', accepted);
-  
-  const gtag = (window as any).gtag;
   
   // Initialize dataLayer if it doesn't exist
   (window as any).dataLayer = (window as any).dataLayer || [];
@@ -81,18 +125,15 @@ export const updateConsentMode = (accepted: boolean) => {
   
   console.log('🍪 [updateConsentMode] dataLayer exists:', !!dataLayer);
   console.log('🍪 [updateConsentMode] dataLayer length:', dataLayer.length);
-  console.log('🍪 [updateConsentMode] gtag exists:', !!gtag);
   
   if (accepted) {
-    // STEP 1: Push cookie_consent_accepted event FIRST (no consent required)
-    console.log('🍪 [updateConsentMode] STEP 1: Pushing cookie_consent_accepted event');
-    dataLayer.push({
-      'event': 'cookie_consent_accepted',
-      'consent_type': 'analytics'
-    });
-    console.log('🍪 [updateConsentMode] Event pushed! Current dataLayer:', dataLayer);
+    // STEP 1: Load GA4 script
+    console.log('🍪 [updateConsentMode] STEP 1: Loading GA4 script');
+    await loadGA4Script();
     
-    // STEP 2: Update consent mode (if gtag is available)
+    const gtag = (window as any).gtag;
+    console.log('🍪 [updateConsentMode] gtag exists:', !!gtag);
+    // STEP 2: Update consent mode
     console.log('🍪 [updateConsentMode] STEP 2: Updating consent mode');
     if (gtag) {
       gtag('consent', 'update', {
@@ -106,16 +147,8 @@ export const updateConsentMode = (accepted: boolean) => {
       console.warn('🍪 [updateConsentMode] gtag not available, skipping consent update');
     }
     
-    // STEP 3: Send analytics_consent_granted event (after consent is granted)
-    console.log('🍪 [updateConsentMode] STEP 3: Pushing analytics_consent_granted event');
-    dataLayer.push({
-      'event': 'analytics_consent_granted',
-      'consent_type': 'analytics'
-    });
-    console.log('🍪 [updateConsentMode] All events pushed successfully!');
-    
-    // STEP 4: Send page_view event directly to GA4
-    console.log('🍪 [updateConsentMode] STEP 4: Sending page_view event to GA4');
+    // STEP 3: Send page_view event directly to GA4
+    console.log('🍪 [updateConsentMode] STEP 3: Sending page_view event to GA4');
     if (gtag) {
       gtag('event', 'page_view', {
         page_title: document.title,
@@ -126,7 +159,21 @@ export const updateConsentMode = (accepted: boolean) => {
     } else {
       console.warn('🍪 [updateConsentMode] gtag not available, skipping page_view event');
     }
+    
+    // STEP 4: Push GTM events
+    console.log('🍪 [updateConsentMode] STEP 4: Pushing GTM events');
+    dataLayer.push({
+      'event': 'cookie_consent_accepted',
+      'consent_type': 'analytics'
+    });
+    dataLayer.push({
+      'event': 'analytics_consent_granted',
+      'consent_type': 'analytics'
+    });
+    console.log('🍪 [updateConsentMode] All events pushed successfully!');
   } else {
+    const gtag = (window as any).gtag;
+    
     // Push cookie rejection event first
     dataLayer.push({
       'event': 'cookie_consent_rejected',
