@@ -58,15 +58,16 @@ export const loadGoogleTagManager = () => {
     document.head.appendChild(gtmScript);
   }
   
-  // After GTM loads, check existing consent and update if needed
-  gtmScript.onload = () => {
+  // Load GA4 with consent mode defaults on page load
+  loadGA4Script().then(() => {
+    // After GA4 loads, check existing consent and update if needed
     const consentStatus = getConsentStatus();
     if (consentStatus === 'accepted') {
       updateConsentMode(true);
     } else if (consentStatus === 'rejected') {
       updateConsentMode(false);
     }
-  };
+  });
 };
 
 // Load GA4 script directly
@@ -96,13 +97,24 @@ const loadGA4Script = (): Promise<void> => {
       }
       (window as any).gtag = gtag;
       
+      // Set consent defaults BEFORE config (required for Consent Mode v2)
+      console.log('🍪 [loadGA4Script] Setting consent defaults to denied');
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted',
+        'wait_for_update': 500
+      });
+      
       // Configure GA4
       gtag('js', new Date());
       gtag('config', 'G-WC6JWWQ9YRR', {
         'send_page_view': false // We'll send page_view manually
       });
       
-      console.log('🍪 [loadGA4Script] GA4 initialized with config');
+      console.log('🍪 [loadGA4Script] GA4 initialized with config and consent mode');
       resolve();
     };
     
@@ -116,25 +128,21 @@ const loadGA4Script = (): Promise<void> => {
 };
 
 // Update consent mode based on user choice
-export const updateConsentMode = async (accepted: boolean) => {
+export const updateConsentMode = (accepted: boolean) => {
   console.log('🍪 [updateConsentMode] Called with accepted:', accepted);
   
   // Initialize dataLayer if it doesn't exist
   (window as any).dataLayer = (window as any).dataLayer || [];
   const dataLayer = (window as any).dataLayer;
+  const gtag = (window as any).gtag;
   
   console.log('🍪 [updateConsentMode] dataLayer exists:', !!dataLayer);
   console.log('🍪 [updateConsentMode] dataLayer length:', dataLayer.length);
+  console.log('🍪 [updateConsentMode] gtag exists:', !!gtag);
   
   if (accepted) {
-    // STEP 1: Load GA4 script
-    console.log('🍪 [updateConsentMode] STEP 1: Loading GA4 script');
-    await loadGA4Script();
-    
-    const gtag = (window as any).gtag;
-    console.log('🍪 [updateConsentMode] gtag exists:', !!gtag);
-    // STEP 2: Update consent mode
-    console.log('🍪 [updateConsentMode] STEP 2: Updating consent mode');
+    // STEP 1: Update consent mode to granted
+    console.log('🍪 [updateConsentMode] STEP 1: Updating consent mode to granted');
     if (gtag) {
       gtag('consent', 'update', {
         'analytics_storage': 'granted',
@@ -142,13 +150,13 @@ export const updateConsentMode = async (accepted: boolean) => {
         'functionality_storage': 'granted',
         'personalization_storage': 'granted'
       });
-      console.log('🍪 [updateConsentMode] Consent mode updated via gtag');
+      console.log('🍪 [updateConsentMode] Consent mode updated to granted');
     } else {
       console.warn('🍪 [updateConsentMode] gtag not available, skipping consent update');
     }
     
-    // STEP 3: Send page_view event directly to GA4
-    console.log('🍪 [updateConsentMode] STEP 3: Sending page_view event to GA4');
+    // STEP 2: Send page_view event directly to GA4
+    console.log('🍪 [updateConsentMode] STEP 2: Sending page_view event to GA4');
     if (gtag) {
       gtag('event', 'page_view', {
         page_title: document.title,
@@ -160,8 +168,8 @@ export const updateConsentMode = async (accepted: boolean) => {
       console.warn('🍪 [updateConsentMode] gtag not available, skipping page_view event');
     }
     
-    // STEP 4: Push GTM events
-    console.log('🍪 [updateConsentMode] STEP 4: Pushing GTM events');
+    // STEP 3: Push GTM events
+    console.log('🍪 [updateConsentMode] STEP 3: Pushing GTM events');
     dataLayer.push({
       'event': 'cookie_consent_accepted',
       'consent_type': 'analytics'
