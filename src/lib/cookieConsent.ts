@@ -113,6 +113,19 @@ export const updateConsentMode = (accepted: boolean) => {
       'consent_type': 'analytics'
     });
     console.log('🍪 [updateConsentMode] All events pushed successfully!');
+    
+    // STEP 4: Send page_view event directly to GA4
+    console.log('🍪 [updateConsentMode] STEP 4: Sending page_view event to GA4');
+    if (gtag) {
+      gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: window.location.pathname
+      });
+      console.log('🍪 [updateConsentMode] page_view event sent to GA4');
+    } else {
+      console.warn('🍪 [updateConsentMode] gtag not available, skipping page_view event');
+    }
   } else {
     // Push cookie rejection event first
     dataLayer.push({
